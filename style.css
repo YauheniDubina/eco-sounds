@@ -17,13 +17,11 @@
   height: 50px;
   background-image: url(/assets/svg/logo.svg);
   background-size: 50px 50px;
-  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 .header__logo:hover {
   cursor: pointer;
-  -webkit-filter: none;
-          filter: none;
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 .header__nav {
   color: white;
@@ -43,6 +41,7 @@
   display: flex;
   gap: 30px;
 }
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +55,7 @@
   height: calc(100vh - 120px);
   min-height: 280px;
   background-image: url(/assets/img/forest.jpg);
+  background-size: cover;
 }
 .main__btn {
   width: 160px;
@@ -68,6 +68,10 @@
   opacity: 0.8;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+}
+
+.play-btn {
+  background-image: url(/assets/svg/pause.svg);
 }
 
 .footer {
@@ -106,4 +110,12 @@
   cursor: pointer;
   -webkit-filter: none;
           filter: none;
+}
+
+.active {
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.active li {
+  color: burlywood;
 }
