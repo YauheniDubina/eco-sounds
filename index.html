@@ -10,19 +10,20 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__logo"></div>
+        <div class="header__logo header__sounds-item active" data-item="forest"></div>
         <nav class="header__nav">
           <ul class="header__sounds-list">
-            <li class="header__sounds-item">Соловей</li>
-            <li class="header__sounds-item">Дрозд</li>
-            <li class="header__sounds-item">Малиновка</li>
-            <li class="header__sounds-item">Жаворонок</li>
-            <li class="header__sounds-item">Славка</li>
+            <li class="header__sounds-item" data-item="solovey">Соловей</li>
+            <li class="header__sounds-item" data-item="drozd">Дрозд</li>
+            <li class="header__sounds-item" data-item="zarynka">Малиновка</li>
+            <li class="header__sounds-item" data-item="javoronok">Жаворонок</li>
+            <li class="header__sounds-item" data-item="slavka">Славка</li>
           </ul>
         </nav>
       </header>
       <main class="main">
-        <button class="main__btn"></button>
+        <audio src="/assets/audio/forest.mp3"></audio>
+        <button class="main__btn "></button>
       </main>
       <footer class="footer">
         <div class="footer__data">
@@ -35,5 +36,6 @@
         </div>
       </footer>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
