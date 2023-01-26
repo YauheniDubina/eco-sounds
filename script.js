@@ -25,8 +25,8 @@ soundOptions.forEach((btn) =>
     btnPlayPause.classList.remove("play-btn");
     checkBtnPlayPause();
     btn.classList.toggle("active");
-    audioPleer.src = `/assets/audio/${btn.dataset.item}.mp3`;
-    mainBg.style.backgroundImage = `url(/assets/img/${btn.dataset.item}.jpg)`;
+    audioPleer.src = `assets/audio/${btn.dataset.item}.mp3`;
+    mainBg.style.backgroundImage = `url(assets/img/${btn.dataset.item}.jpg)`;
 
     playAudio();
   })
